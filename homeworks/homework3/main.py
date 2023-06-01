@@ -8,17 +8,17 @@
 # 1 2 3 4 5
 # 3 -> 1
 
-n = int(input('Введите длину массива: '))
-array = list(range( 1, n + 1))
-print(array)
+# n = int(input('Введите длину массива: '))
+# array = list(range( 1, n + 1))
+# print(array)
 
-x = int(input('Введите искомое число в массиве: '))
-count = 0
+# x = int(input('Введите искомое число в массиве: '))
+# count = 0
 
-for i in array:
-    if i == x:
-        count += 1
-print(f'Число {x} встречается в массиве {count} раз')
+# for i in array:
+#     if i == x:
+#         count += 1
+# print(f'Число {x} встречается в массиве {count} раз')
 
 
 
@@ -32,6 +32,20 @@ print(f'Число {x} встречается в массиве {count} раз')
 # 5
 # 1 2 3 4 5
 # 6 -> 5
+
+# n = int(input('Введите длину массива: '))
+# array = list(range( 1, n + 1))
+# print(array)
+
+# x = int(input('Введите искомое число в массиве: '))
+
+# element = x
+# for i in range(len(array)):
+#     if array[i] == x:
+#         break
+#     if abs(x - array[i]) < element:
+#         element = array[i]
+# print(f'Самый близкий по величине элемент к заданному числу {x} = {array[i]}')
 
 
 
@@ -51,3 +65,25 @@ print(f'Число {x} встречается в массиве {count} раз')
 
 # ноутбук
 #     12
+
+a = dict.fromkeys(['A', 'E', 'I', 'O', 'U', 'L', 'N', 'S', 'T', 'R', 
+                    'А', 'В', 'Е', 'И', 'Н', 'О', 'Р', 'С', 'Т'], 1)
+b = dict.fromkeys(['D', 'G', 'Д', 'К', 'Л', 'М', 'П', 'У'], 2)
+c = dict.fromkeys(['B', 'C', 'M', 'P', 'Б', 'Г', 'Ё', 'Ь', 'Я'], 3)
+d = dict.fromkeys(['F', 'H', 'V', 'W', 'Y', 'Й', 'Ы'], 4)
+e = dict.fromkeys(['K', 'Ж', 'З', 'Х', 'Ц', 'Ч'], 5)
+f = dict.fromkeys(['J', 'X', 'Ш', 'Э', 'Ю'], 8)
+g = dict.fromkeys(['Q', 'Z', 'Ф', 'Щ', 'Ъ'], 10)
+
+dict = {**a, **b, **c, **d, **e, **f, **g}
+
+word = str(input('Введите слово: ')).upper()
+list_word = list(word)
+
+result = 0
+for k, v in dict.items():
+    for i in list_word:
+        if k == i:
+            result += v
+
+print(f'Стоимость вашего слова: {result}')
