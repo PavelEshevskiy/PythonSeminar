@@ -9,6 +9,20 @@
 # 3 6 9 12 15 18
 # 6 12
 
+# from random import randint
+
+# n = int(input("Введите длину первого множества: "))
+# list_set_1 = [randint(1, 10) for i in range(n)]
+# m = int(input("Введите длину первого множества: "))
+# list_set_2 = [randint(1, 10) for i in range(m)]
+# print(list_set_1)
+# print(list_set_2)
+
+# set_1 = set(sorted(list_set_1))
+# set_2 = set(sorted(list_set_2))
+# set_3 = set_1.union(set_2)
+# print(set_3)
+
 
 # Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растет на
 # круглой грядке, причем кусты высажены только по окружности. Таким образом, у
@@ -26,3 +40,20 @@
 
 # 4 -> 1 2 3 4
 # 9
+
+import random
+
+bush = int(input('Введите количество кустов: '))
+
+list_bush = []
+for i in range(bush):
+    list_bush.append(random.randint(1, 10))
+print(list_bush)
+
+result_count = []
+for i in range(bush-1):
+    summ = list_bush[i - 1] + list_bush[i] + list_bush[i + 1]
+    result_count.append(summ)
+result_count.append(list_bush[-2] + list_bush[-1] + list_bush[0])
+
+print(f'Максимальное количество ягод - {max(result_count)}')
