@@ -84,16 +84,16 @@
 # Ввод:                Вывод:
 # 1 2 3 2 3            2
 
-import random
-list_size = int(input("Введите количество элементов массива: "))
-list1 = [random.randint(0, 10) for i in range(list_size)]
-set1 = set(list1)
-count = 0
-for i in set1:
-    count += list1.count(i) // 2
+# import random
+# list_size = int(input("Введите количество элементов массива: "))
+# list1 = [random.randint(0, 10) for i in range(list_size)]
+# set1 = set(list1)
+# count = 0
+# for i in set1:
+#     count += list1.count(i) // 2
     
-print(list1)
-print(f'Количество парных чисел в массиве: {count}')
+# print(list1)
+# print(f'Количество парных чисел в массиве: {count}')
 
 
 # Задача №45. Решение в группах
