@@ -1,0 +1,27 @@
+{
+    "1": {
+        "name": "Петька",
+        "phone": "777-777-777",
+        "comment": "Стажер"
+    },
+    "2": {
+        "name": "Василий Иваныч",
+        "phone": "666-666-666",
+        "comment": "Начальник Петьки"
+    },
+    "3": {
+        "name": "Анка-Пулеметчица",
+        "phone": "222-333-444",
+        "comment": "Секретарша Василий Иваныча"
+    },
+    "4": {
+        "name": "fshsh",
+        "phone": "eeeesggg",
+        "comment": "rrrrrrrr"
+    },
+    "5": {
+        "name": "asfdg",
+        "phone": "fffffff",
+        "comment": "ddddddd"
+    }
+}
